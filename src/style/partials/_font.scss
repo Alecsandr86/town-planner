@@ -1,0 +1,20 @@
+@import "path";
+//////////////////////////////////////////////////////
+
+
+//   Font Stacks  НАБОРЫ БАЗОВЫХ ШРИФТОВ bourbon
+
+//font-family: $georgia;
+//font-family: $helvetica;
+//font-family: $lucida-grande;
+//font-family: $monospace;
+//font-family: $verdana;
+
+// @include font-face("PT_Sans", "/fonts/PT_Sans/pt_sans");
+// @include font-face("source-sans-pro", "/fonts/source-sans-pro/source-sans-pro-bold", bold);
+// @include font-face("source-sans-pro", "/fonts/source-sans-pro/source-sans-pro-italic", normal, italic);
+// 
+
+body{
+  font-family: $helvetica;
+}

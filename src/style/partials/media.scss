@@ -1,0 +1,16 @@
+@media screen and (max-width: 1900px) {
+    .baner-content {
+        height: 256px;
+    }
+    .baner-img {
+      width: 44%;
+      position:absolute;
+      bottom: 0;
+      right: 0;
+      img{
+        bottom: -10px;
+        top:auto;
+      }
+  }
+
+}
