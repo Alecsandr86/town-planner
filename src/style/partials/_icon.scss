@@ -6,12 +6,14 @@
 //hover спрайта
 
 
-//.icon {
-//  @include sprite($icon);
-//  &:hover {
-//    @include sprite($icon-hover);
-//  }
-//}
+.bx-pager-link{
+ @include sprite($bx-pager-link);
+ display: inline-block;
+ text-indent: -999999px;
+ &.active {
+   @include sprite($bx-pager-link-hover);
+ }
+}
 //.nav-mobail{
 //  @include sprite($nav-mobail);
 //  &:hover {

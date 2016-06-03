@@ -16,4 +16,8 @@ $(document).ready(function(){
 
     //alert('ok');
 
+    $('.slid-advanteges').bxSlider({
+      controls: false,
+    });
+
 });
