@@ -14,3 +14,95 @@
   }
 
 }
+@media screen and (max-width: 1530px) {
+    .wrapper {
+      max-width: 1000px;
+  }
+  .aside-nav {
+    width: 73%;
+  }
+  .header-nav{
+    ul{
+      padding: 0;
+    }
+  }
+  .header-nav{
+    padding: 21px 0 35px;
+  }
+  .baner-title {
+      width: 66.5%;
+  }
+  .wr-slid {
+    width: 49%;
+  }
+  .hidden-lg{
+    display: none;
+  }
+  .wr-slid-input {
+    width: 240px;
+  }
+  .two-form{
+    float: none;
+    padding: 25px 0 0 58px;
+  }
+  .box-map-city {
+    padding: 0 0 28px;
+  }
+  .slid-input {
+    width: 170px;
+  }
+  .form-sort{
+    label{
+      margin: 0 10px;
+    }
+  }
+  .objects-cont {
+    padding: 36px 0;
+  }
+  .objects-item{
+    img{
+      width: 100%;
+      height: 207px;
+    }
+  }
+.wr-slid{
+
+  .bx-viewport{
+    height: 240px!important;
+  }
+  .bx-pager{
+    bottom: 38px;
+  }
+  .item{
+    .img{
+      width: 39%;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+.slid-advanteges{
+  .descript {
+    width: 61%;
+    padding: 34px 0 0 25px;
+  }
+}
+
+.our-advantages {
+    padding: 43px 0 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

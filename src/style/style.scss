@@ -2,7 +2,6 @@
 @import "partials/print";
 
 
-
 body{
   background-color: #f9f9f9;
 }
@@ -103,11 +102,13 @@ header{
   text-transform: uppercase;
   color: #000;
   font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: bold;
 }
 
 
 .baner{
   background: url('../images/big-baner.jpg') 50% 0 no-repeat;
+  background-size: cover;
   width: 100%;
   min-height: 500px;
   position: relative;
@@ -198,6 +199,8 @@ header{
   position: relative;
   margin: 20px 0 11px;
   letter-spacing: 1.2px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: bold;
   span{
     position: relative;
     z-index: 2;
@@ -266,7 +269,7 @@ header{
 }
 .company{
   text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 52px;
 }
 .company-item{
   width: 202px;
@@ -279,7 +282,7 @@ header{
   text-align: center;
   vertical-align: middle;
   overflow: hidden;
-  opacity: 0.7;
+  opacity: 0.8;
   -webkit-transition: all 0.5s ease 0s;
   -moz-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
@@ -300,7 +303,7 @@ header{
     top: 0;
     left: 0;
     display: inline-block;
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,0.8);
     -webkit-transition: all 0.5s ease 0s;
     -moz-transition: all 0.5s ease 0s;
     -o-transition: all 0.5s ease 0s;
@@ -322,6 +325,349 @@ header{
 
 
 
+
+
+
+
+
+
+
+.city{
+    .castum-h4{
+      margin: 20px 0 0;
+      .jq-selectbox{
+        margin: -8px 13px 0;
+      }
+    }
+}
+.jq-selectbox__select-text {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: rem(16);
+  color: #9c9fa6;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.jq-selectbox__select {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: rem(16);
+  color: #9c9fa6;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+
+
+.box-map-city{
+  position: relative;
+  width: 100%;
+  padding: 0 0 60px;
+  img{
+    width: 100%;
+  }
+}
+.mark-map-3{
+  color: #fff;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: rem(30);
+  font-style: normal;
+  text-align: right;
+  font-weight: bold;
+  span{
+    display: inline-block;
+    margin: 0 15px 0 0;
+  }
+}
+
+.mark-1{
+  position: absolute;
+  top: 20px;
+  left: 20%;
+}
+.mark-2{
+  position: absolute;
+  top: 30px;
+  left: 30%;
+}
+.mark-3{
+  position: absolute;
+  top: 40px;
+  left: 40%;
+}
+
+
+
+.objects{
+  .h4{
+    font-weight: normal;
+    vertical-align: middle;
+    span{
+      font-weight: bold;
+    }
+  }
+  .form-sort{
+    display: inline-block;
+    margin: -4px 0 0 6px;
+  }
+}
+.form-sort{
+  color: #9c9fa6;
+  text-transform: uppercase;
+  font-size: rem(16);
+  vertical-align: middle;
+  label{
+    display: inline-block;
+    margin: 0 20px;
+    vertical-align: middle;
+    &:last-child{
+      margin: 0 0 0 20px;
+    }
+  }
+}
+.two-form{
+  float: right;
+}
+
+.wr-slid-input{
+  width: 230px;
+}
+.slid-input{
+  width: 160px;
+  display: block;
+}
+
+
+.irs-from, .irs-to, .irs-single {
+  font-size: rem(16);
+  color: #9c9fa6;
+  font-family: 'PT Sans Narrow', sans-serif;
+  text-transform: uppercase;
+  font-weight: normal!important;
+}
+
+
+.title-slid{
+  text-transform: uppercase;
+  font-size: rem(16);
+  color: #9c9fa6;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: normal!important;
+  text-align: center;
+  padding: 25px 0 0;
+  span{
+    text-transform: none;
+    font-weight: normal!important;
+    display: block;
+    line-height: 10px;
+    font-size: rem(14);
+  }
+}
+
+
+
+.objects-cont{
+  padding: 10px 0;
+}
+.objects-item{
+  position: relative;
+  margin: 0 0 11px;
+
+  img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+  }
+  &.cast-two{
+    vertical-align: middle;
+    a{
+      vertical-align: middle;
+      display: inline-block;
+      color: #1b1b1b;
+      font-size: rem(30);
+      text-transform: uppercase;
+      font-family: 'PT Sans Narrow', sans-serif;
+      font-weight: bold;
+      padding: 80px 0 0 40px;
+    }
+
+  }
+}
+.object-title{
+  display: inline-block;
+  position: relative;
+  z-index: 3;
+  text-decoration: none;
+  background-color: #ededed;
+  height: 207px;
+  max-width: 549px;
+  min-width: 203px;
+
+
+  &:after{
+    content: '';
+    display: inline-block;
+    background: url('../images/object-title.png') 0 0 no-repeat;
+    width: 93px;
+    height: 207px;
+    position: absolute;
+    top: 0;
+    right: -92px;
+  }
+    &.cast{
+      background: transparent url('../images/object-title-castum.png') 0 0 no-repeat;
+      width: 549px;
+      height: 207px;
+      display: block;
+      color: #fff;
+      padding: 31px 45px;
+      &:after{
+        display: none;
+      }
+      .link-ico{
+        position: absolute;
+        top: 46%;
+        right: 83px;
+      }
+    }
+    .left{
+      display: inline-block;
+      margin: 0 45px 0 0;
+    }
+    .h-tit{
+      font-family: 'PT Sans Narrow', sans-serif;
+      font-weight: bold;
+      font-size: rem(20);
+      text-transform: uppercase;
+      padding: 0 0 6px;
+      display: inline-block;
+      span{
+        font-size: rem(30);
+      }
+    }
+
+}
+
+.maps-obj{
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+  padding: 27px 0 0;
+  span{
+    color: #f9f9f9;
+    font-size: rem(16);
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    margin: -3px 0 0;
+    line-height: 20px;
+  }
+}
+
+
+.nav-asid{
+  position: absolute;;
+  top: 0;
+  left: 0;
+  width: 163px;
+  height: 100%;
+  &:before{
+    content: '';
+    display: inline-block;
+    background: url('../images/nav-asid1.png') 0 0 no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 163px;
+    height: 724px;
+    z-index: 99;
+  }
+}
+
+.nav-bg{
+  width: 163px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #1D6DBD;
+  z-index: 98;
+}
+
+.asid-menu{
+  width: 163px;
+  height: 100%;
+  position: relative;
+  top: 170px;
+  left: 0;
+  padding: 30px;
+  z-index: 99;
+  &.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  ul{
+    list-style: none;
+    padding: 0;
+    border-bottom: 1px solid #fff;
+    margin: 0 0 31px;
+    li{
+      text-align: center;
+    }
+    a{
+      color: #fff;
+      font-size: rem(16);
+      font-family: 'PT Sans Narrow', sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    span{
+      display: block;
+      padding: 8px 0 41px;
+    }
+  }
+}
+
+.asid-tel{
+  display: inline-block;
+  text-align: center;
+  font-size: rem(33);
+  color: #fff;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+///////////////// \ FOOTER  \ ///////////////////
+
+footer{
+  padding: 22px 0 30px;
+  .logo{
+    padding: 19px 0 0;
+  }
+  .head-tel{
+    width: 460px;
+    display: inline-block;
+    text-align: left;
+    a{
+      font-weight: normal;
+      font-size: rem(16);
+      padding: 0 36px;
+    }
+  }
+}
 
 
 //************ ПЛАВНАЯ АНИМАЦИЯ ***********//
