@@ -4,51 +4,59 @@ window.log = function(param){
 };
 $(document).ready(function(){
 
-  // ionRangeSlider
+      // ionRangeSlider
 
-  $("#slid-1").ionRangeSlider({
-    type: "double",
-     min: 2200,
-     max: 10000,
-     from: 2200,
-     to: 5600,
-     hide_min_max: true,
-  });
-  $("#slid-2").ionRangeSlider({
-    type: "double",
-     min: 20,
-     max: 100,
-     from: 20,
-     to: 60,
-     hide_min_max: true,
-  });
+      $("#slid-1").ionRangeSlider({
+        type: "double",
+         min: 2200,
+         max: 10000,
+         from: 2200,
+         to: 5600,
+         hide_min_max: true,
+      });
+      $("#slid-2").ionRangeSlider({
+        type: "double",
+         min: 20,
+         max: 100,
+         from: 20,
+         to: 60,
+         hide_min_max: true,
+      });
+      $("#slid-3").ionRangeSlider({
+        type: "double",
+         min: 0,
+         max: 100,
+         from: 25,
+         to: 65,
+         hide_min_max: true,
+      });
+      $("#slid-4").ionRangeSlider({
+        type: "double",
+         min: 0,
+         max: 100,
+         from: 25,
+         to: 65,
+         hide_min_max: true,
+      });
+      $("#slid-5").ionRangeSlider({
+        type: "double",
+         min: 0,
+         max: 100,
+         from: 25,
+         to: 65,
+         hide_min_max: true,
+      });
+      $("#slid-6").ionRangeSlider({
+        type: "double",
+         min: 0,
+         max: 100,
+         from: 25,
+         to: 65,
+         hide_min_max: true,
+      });
 
-  // \ionRangeSlider\
+      // \ionRangeSlider\
 
-
-
-
-  var $object = $('.asid-menu');
-  var $clssOb = 'fixed';
-  var obHeight = $object.offset().top;
-
-  $(this).scroll(function(e){
-    if($(this).scrollTop() > obHeight){
-      $object.addClass($clssOb);
-    }else {
-      $object.removeClass($clssOb);
-    }
-  });
-
-    //Chrome Smooth Scroll
-    try {
-        $.browserSelector();
-        if($("html").hasClass("chrome")) {
-            $.smoothScroll();
-        }
-    } catch(err) {
-
-    };
 
     $('.butt-nav').on('click', function(){
       $(this).next('ul').slideToggle(500);
@@ -82,12 +90,18 @@ $(document).ready(function(){
     //  *******************************/
 
 
-
     // bxSlider
     $('.slid-advanteges').bxSlider({
       controls: false,
     });
+
+    $('.big-img').bxSlider({
+        pagerCustom: '#pagesgallery',
+        controls: false,
+    });
     // \bxSlider\
+
+
 
 
 
@@ -101,7 +115,18 @@ $(document).ready(function(){
 
 
 
+    // скрол меню на главной
+    var $object = $('.asid-menu');
+    var $clssOb = 'fixed';
+    var obHeight = $object.offset().top;
 
-
+    $(this).scroll(function(e){
+      if($(this).scrollTop() > obHeight){
+        $object.addClass($clssOb);
+      }else {
+        $object.removeClass($clssOb);
+      }
+    });
+    // скрол меню на главной
 
 });
