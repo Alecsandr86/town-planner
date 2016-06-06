@@ -13,10 +13,14 @@
       }
   }
 
-}
+} ////////////////\  1900px   \//////////////////
+
+
+
 @media screen and (max-width: 1530px) {
     .wrapper {
-      max-width: 1000px;
+      max-width: 1250px;
+      padding: 0 0 0 220px;
   }
   .aside-nav {
     width: 73%;
@@ -93,6 +97,76 @@
     padding: 43px 0 30px;
 }
 
+/////////////// карта //////////////
+.box-map-city{
+  position: relative;
+  width: 100%;
+  padding: 0 0 60px;
+  height: 543px;
+  &:before{
+    content: '';
+    display: block;
+    background: url('../images/map-top1.png') 0 0 no-repeat;
+    width: 1047px;
+    height: 91px;
+    position: absolute;
+    top: -13px;
+    left: -2px;
+    z-index: 1
+  }
+  &:after{
+    content: '';
+    display: block;
+    background: url('../images/map-bottom1.png') 0 0 no-repeat;
+    width: 1047px;
+    height: 99px;
+    position: absolute;
+    bottom: 16px;
+    left: -2px;
+    z-index: 1;
+  }
+  img{
+    width: 100%;
+  }
+}
+.map-mask{
+  padding: 21px 0 30px;
+  width: 1030px;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  &:before{
+    content: '';
+    display: block;
+    background: url('../images/map-right1.png') 0 0 no-repeat;
+    width: 154px;
+    height: 353px;
+    position: absolute;
+    top: 98px;
+    right: -16px;
+    z-index: 5;
+  }
+  &:after{
+    content: '';
+    display: block;
+    background: url('../images/map-left1.png') 0 0 no-repeat;
+    width: 134px;
+    height: 353px;
+    position: absolute;
+    top: 98px;
+    left: 0;
+    z-index: 5;
+  }
+}
+#map{
+  position: relative;
+  z-index: 0;
+  width: 1018px!important;
+  height: 515px!important;
+}
+/////////////// карта //////////////
 
 
 
@@ -104,5 +178,425 @@
 
 
 
+
+} ////////////////\  1530px   \//////////////////
+
+
+
+@media screen and (max-width: 1199px) {
+
+  .nav-asid{
+    display: none;
+  }
+  .wrapper{
+    max-width: 960px;
+    padding: 0;
+  }
+  header{
+    padding: 39px 0 23px;
+    .logo{
+      display: none;
+    }
+    .aside-nav{
+      float: none;
+      width: 100%;
+      overflow: hidden;
+    }
+    .head-tel,.entrance{
+      display: none;
+    }
+    .phon-tel-mob{
+      display: block;
+    }
+    .header-nav{
+      float: left;
+      width: 87%;
+      padding: 21px 0 0;
+      ul{
+        margin-bottom: 0;
+      }
+    }
+    .header-title{
+      width: 100%;
+      p{
+        margin: 5px 0;
+      }
+    }
+  }
+
+  .baner-title {
+    width: 80.7%;
+    padding: 21px 0 0;
+  }
+  .choose-apartment{
+    margin: 0 0 0 70px;
+  }
+  .baner-img{
+    display: none;
+  }
+  .our-advantages {
+    padding: 43px 0 25px;
+  }
+
+
+  footer{
+    .header-nav{
+      li {
+        margin: 0 15px;
+      }
+    }
+    .aside-nav {
+      padding: 9px 0 0;
+    }
+  }
+
+
+.city{
+  overflow: hidden;
+}
+
+  /////////////// карта //////////////
+  .map-mask{
+    transform: scale(0.9, 0.9);
+    padding: 21px 0 0;
+  }
+
+  /////////////// карта //////////////
+
+
+
+
+
+} ////////////////\  1199px   \//////////////////
+
+@media screen and (max-width: 959px) {
+.wrapper{
+  max-width: 640px;
+}
+
+header {
+  .header-nav{
+    width: 81%;
+    .butt-nav{
+      display: inline-block;
+    }
+    ul{
+      display: none;
+      li{
+        display: block;
+        margin: 0 ;
+        &:last-child{
+          margin: 0;
+        }
+      }
+    }
+  }
+  .header-title {
+    padding: 59px 0 0;
+  }
+}
+.phon-tel-mob{
+  width: 19%;
+  padding: 5px 0 0;
+}
+.baner-title{
+  width: 92%;
+  padding: 33px 0 0;
 
 }
+.big-h{
+  font-size: rem(36);
+  padding: 27px 7% 10px 0;
+  span{
+    font-size: rem(54);
+  }
+}
+.choose-apartment{
+  margin: 0;
+}
+.wr-slid {
+  float: none;
+  width: 464px;
+  margin: 0 auto 15px;
+  .bx-viewport {
+      height: 216px !important;
+  }
+}
+.slid-box {
+  padding: 11px 0 0;
+}
+.slid-advanteges {
+    min-height: 216px;
+}
+.our-advantages {
+    padding: 43px 0 10px;
+}
+.hidden-md{
+  display: none;
+}
+.company-item{
+  //transform: scale(0.9,0.9);
+  width: 180px;
+  height: 180px;
+  margin: 0 10px;
+  &:first-child{
+    margin: 0 10px;
+  }
+  .company-icon {
+    position: absolute;
+    top: 6px;
+    right: 2px;
+  }
+}
+.company {
+    padding: 10px 0 37px;
+}
+.objects-cont {
+    padding: 36px 0 7px;
+}
+footer{
+  padding: 0 0 30px;
+  .head-tel{
+    display: block;
+    width: 100%;
+    text-align: right;
+    padding: 55px 0 13px;
+  }
+  .aside-nav {
+    width: 100%;
+    float: none;
+  }
+  .header-nav{
+    padding: 15px 0 35px;
+    ul{
+      text-align: center;
+    }
+    li {
+      margin: 0 10px;
+    }
+  }
+}
+
+
+
+/////////////// карта //////////////
+.map-mask{
+  transform: scale(0.6, 0.6);
+  left: -200px;
+  margin: -100px 0;
+}
+
+/////////////// карта //////////////
+
+
+
+}////////////////\  959px   \//////////////////
+
+
+@media screen and (max-width: 615px) {
+
+  .wrapper{
+    max-width: 320px;
+  }
+  .hidden-xs{
+    display: none!important;
+  }
+  header{
+    .header-nav{
+      .butt-nav{
+        display: none;
+      }
+      .butt-mob-nav{
+        display: inline-block;
+      }
+    }
+    .phon-tel-mob{
+      width: 100%;
+      padding: 0;
+      .butt-mob-nav{
+        display: inline-block;
+        padding: 10px 15px 0 0;
+        i{
+          margin: -3px 5px 0 0;
+        }
+      }
+      ul{
+        display: inline-block;
+        margin: 0;
+      }
+    }
+    .header-title {
+      padding: 42px 0 6px;
+      p{
+        height: 94px;
+        overflow: hidden;
+        margin: 10px 0 0;
+      }
+    }
+  }
+  .baner-title {
+    padding: 44px 0 0;
+    width: 88%;
+  }
+.big-h {
+  font-size: rem(25);
+  text-align: left;
+  padding: 22px 26% 10px 44px;
+  span{
+    font-size: rem(38);
+  }
+}
+.choose-apartment{
+  width: 77%;
+}
+.our-advantages {
+    padding: 10px 0 0;
+}
+.wr-slid{
+  width: 100%;
+}
+.slid-advanteges{
+  .descript {
+     width: 100%;
+     float: none;
+     position: relative;
+     z-index: 9;
+     padding: 20px 0 0 25px;
+   }
+   .item{
+     .img{
+       float: none;
+       position: absolute;
+       top: 0;
+       right: 0;
+       width: 70%;
+       overflow: hidden;
+       img{
+         position: relative;
+         top: 0;
+          right: -50%;
+       }
+     }
+   }
+
+}
+
+.wr-slid {
+  .bx-pager {
+      bottom: 29px;
+  }
+}
+.company-item {
+  transform: scale(0.78,0.78);
+  margin: 0 -30px!important;
+  &:first-child{
+    margin: 0 10px 0 -30px!important;
+  }
+}
+
+.form-sort {
+  label {
+    margin: 0 6px;
+    &:last-child {
+      margin: 0 ;
+    }
+  }
+  .jq-selectbox{
+    margin: 23px 0 0 84px;
+  }
+}
+.objects {
+  .form-sort {
+      margin: 20px 0 0 0px;
+  }
+}
+.two-form {
+    padding: 0 0 0 20px;
+
+}
+.objects-cont {
+    padding: 14px 0 7px;
+}
+.object-title{
+  max-width: 253px;
+  min-width: 110px;
+  &.cast {
+      padding: 31px 20px;
+      width: 100%;
+      max-width: 100%;
+      min-width: 100%;
+      .link-ico {
+          right: 10px;
+      }
+  }
+  .left{
+    margin: 0;
+  }
+  .maps-obj{
+    display: none;
+  }
+}
+
+.objects-item{
+  &.cast-two {
+    a{
+      font-size: rem(18);
+      padding: 90px 0 0 20px;
+    }
+
+  }
+}
+
+footer {
+  .logo{
+    float: none;
+  }
+  .head-tel {
+    text-align: left;
+    padding: 10px 0 13px;
+    a{
+      padding: 0 0 0 10px;
+    }
+  }
+  .header-nav{
+    display: none;
+    padding: 15px 0 0;
+    ul{
+
+    }
+    li{
+      display: block;
+      margin: 0;
+      &:last-child{
+        margin: 0;
+      }
+    }
+  }
+}
+.but-nav-footer{
+  display: inline-block;
+}
+header{
+  .mobail-nav-header{
+    display: none;
+    width: 100%;
+    ul{
+      display: block;
+    }
+  }
+}
+
+
+
+/////////////// карта //////////////
+.map-mask{
+  left: -348px;
+  margin: -100px 0;
+}
+
+/////////////// карта //////////////
+
+
+
+
+}////////////////\  615px   \//////////////////

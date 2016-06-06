@@ -42,7 +42,52 @@
                     &frasl;
                 <a href="#">регистрация</a>
             </span>
+
             <nav class="header-nav">
+              <a class="butt-nav" href="#">
+                <i class="burger"></i>
+                  МЕНЮ
+              </a>
+              <ul>
+                <li class="active">
+                  <a href="#">О корпорации </a>
+                </li>
+                <li>
+                  <a href="#">Новости</a>
+                </li>
+                <li>
+                  <a href="#">Агентам</a>
+                </li>
+                <li>
+                  <a href="#">Застройщикам</a>
+                </li>
+                <li>
+                  <a href="#">Помощь</a>
+                </li>
+                <li>
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <nav class="phon-tel-mob">
+              <ul>
+                <li>
+                  <a class="outer" href="#">
+                    <i class="lock"></i>
+                  </a>
+                </li>
+                <li class="hidden-xs">
+                  <a class="outer" href="#">
+                    <i class="phone"></i>
+                  </a>
+                </li>
+              </ul>
+              <a class="butt-mob-nav" href="#">
+                <i class="burger-mob"></i>
+                  МЕНЮ
+              </a>
+            </nav>
+            <nav class="header-nav mobail-nav-header">
               <ul>
                 <li class="active">
                   <a href="#">О корпорации </a>
@@ -223,17 +268,17 @@
           <img src="images/company-icon-2.png" alt="img">
           <a href="#"></a>
         </div>
-        <div class="company-item outer">
+        <div class="company-item outer hidden-xs">
           <i class="company-icon"></i>
           <img src="images/company-icon-3.png" alt="img">
           <a href="#"></a>
         </div>
-        <div class="company-item outer">
+        <div class="company-item outer hidden-md">
           <i class="company-icon"></i>
           <img src="images/company-icon-4.png" alt="img">
           <a href="#"></a>
         </div>
-        <div class="company-item hidden-lg outer">
+        <div class="company-item outer hidden-lg ">
           <i class="company-icon"></i>
           <img src="images/company-icon-5.png" alt="img">
           <a href="#"></a>
@@ -257,12 +302,17 @@
       </span>
 
     </div>
-    <div class="box-map-city">
-      <img src="images/map-sity1.png" alt="map">
-        <!-- <img src="images/map-sity.png" alt="map">
-        <i class="mark-map-1 mark-1"></i>
-        <i class="mark-map-2 mark-2"></i>
-        <i class="mark-map-3 mark-3"><span>4</span></i> -->
+    <div class="map-mask">
+      <div class="box-map-city">
+
+        <!-- <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15991.992561159772!2d30.3119556!3d59.9321576!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696378cc74a65ed%3A0x6dc7673fab848eff!2z0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINCg0L7RgdGB0LjRjw!5e0!3m2!1sru!2sua!4v1465116891065"  frameborder="0" style="border:0" allowfullscreen></iframe> -->
+
+          <div id="map"></div>
+
+          <!-- <i class="mark-map-1 mark-1"></i>
+          <i class="mark-map-2 mark-2"></i>
+          <i class="mark-map-3 mark-3"><span>4</span></i> -->
+      </div>
     </div>
   </div><!--\ city\ -->
   <!-- objects -->
@@ -291,29 +341,29 @@
           <!-- slid-input -->
           </form><!-- form-sort -->
           <form class="form-sort two-form">
-          <label class="wr-slid-input both">
-            <span class="title-slid left">
-              цена
-              <span>(тыс. руб.)</span>
-            </span>
-            <span class="slid-input right">
-              <input type="text" id="slid-1" name="name" value="" />
-            </span>
+            <label class="wr-slid-input both">
+              <span class="title-slid left">
+                цена
+                <span>(тыс. руб.)</span>
+              </span>
+              <span class="slid-input right">
+                <input type="text" id="slid-1" />
+              </span>
 
-          </label><!-- \slid-input\ -->
+            </label><!-- \slid-input\ -->
 
-          <label class="wr-slid-input both">
-            <span class="title-slid left">
-              площадь
-              <span>(м2)</span>
-            </span>
-            <span class="slid-input right">
-              <input type="text" id="slid-2" name="name" value="" />
-            </span>
+            <label class="wr-slid-input both">
+              <span class="title-slid left">
+                площадь
+                <span>(м2)</span>
+              </span>
+              <span class="slid-input right">
+                <input type="text" id="slid-2" />
+              </span>
 
-          </label>
+            </label>
 
-        </form><!-- form-sort -->
+          </form><!-- form-sort -->
       </div>
       <div class="objects-cont both">
           <!-- objects-item -->
@@ -411,13 +461,15 @@
         </a>
         <div class="aside-nav right">
             <span class="head-tel"> <i class="phone"></i> +7 (4722) 787-787 <a href="#">info@goodsol.ru</a></span>
+            <a class="but-nav-footer" href="#menu-footer">Меню</a>
             <span class="entrance">
                 <i class="lock"></i>
                 <a href="#">Вход</a>
                     &frasl;
                 <a href="#">регистрация</a>
             </span>
-            <nav class="header-nav">
+            <nav id="menu-footer" class="header-nav">
+
               <ul>
                 <li class="active">
                   <a href="#">О корпорации </a>
@@ -434,7 +486,7 @@
                 <li>
                   <a href="#">Помощь</a>
                 </li>
-                <li>
+                <li >
                   <a href="#">Контакты</a>
                 </li>
               </ul>
@@ -452,6 +504,8 @@
   <script src="js/jquery.formstyler.min.js"></script>
   <script src="js/ion.rangeSlider.min.js"></script>
   <script src="js/script.js"></script>
-
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCB7wB4D8Iszke6RkWbPHfpvmh7cuf72Oc"
+    type="text/javascript"></script>
+    <script src="js/google-map.js"></script>
 </body>
 </html>

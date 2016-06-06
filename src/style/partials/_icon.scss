@@ -9,7 +9,7 @@
 .bx-pager-link{
  @include sprite($bx-pager-link);
  display: inline-block;
- text-indent: -999999px;
+ text-indent: -9999px;
  &.active {
    @include sprite($bx-pager-link-hover);
  }
