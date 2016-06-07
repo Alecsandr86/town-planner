@@ -173,10 +173,97 @@
 
 
 
+.apartments{
+  height: 695px;
+  &.other {
+    .item {
+        margin: 2px 0 40px;
+    }
+  }
+}
+
+
+
+.poist-menu{
+  left: -300px;
+  top: 203px;
+  overflow: hidden;
+  .asid-menu{
+    top: 0;
+    padding-top: 70px;
+  }
+  .nav-bg{
+    top: 203px;
+    left: -300px;
+  }
+  &:before {
+    top: -200px;
+  }
+}
 
 
 
 
+// mеню
+
+.find-partment{
+  display: block;
+}
+
+.h4-poisk{
+  span{
+    padding: 0 29px 0 300px;
+    float: left;
+    margin: -27px 0 0;
+  }
+}
+
+// .poist-menu {
+//   .asid-menu {
+//       top: 215px;
+//       width: 280px;
+//       left: -300px;
+//   }
+// }
+
+
+
+
+.poist-menu{
+  position: absolute;
+  top: 203px;
+  left: -300px;
+  width: 280px;
+  height: 100%;
+  .nav-bg{
+    width: 280px;
+  }
+  &:before {
+    content: '';
+    background: url("../images/nav-asid3.png") 0 0 no-repeat;
+    width: 280px;
+    height: 751px;
+    display: inline-block;
+    position: absolute;
+    top: -203px;
+    left: 0;
+    z-index: 99;
+  }
+  .asid-menu{
+    top: 13px;
+    width: 280px;
+    left: -300px;
+  }
+  &.active{
+      .asid-menu{
+        &.fixed{
+          top: 0;
+        }
+      }
+  }
+}
+
+// mеню
 
 
 
@@ -294,9 +381,25 @@
 
 }
 
+.poisk {
+    margin-top: 0;
+    overflow: hidden;
+}
+.apartments{
+  max-width: 350px;
+  height: 690px;
+  &.other {
+    .item {
 
-
-
+    }
+  }
+}
+.map-wrapper {
+    width: 62%;
+    img{
+      width: 100%;
+    }
+}
 
 
 
@@ -457,6 +560,31 @@ footer{
       }
     }
 }
+
+
+
+.apartments {
+    max-width: 100%;
+    width: 100%;
+}
+.map-wrapper {
+  display: none;
+}
+.box-na-map{
+  display: inline-block;
+}
+
+
+.poisk {
+  .castum-h4 {
+    .bread-crumbs {
+        margin: -18px 10px 0;
+    }
+  }
+}
+
+
+
 
 
 }////////////////\  959px   \//////////////////
@@ -717,10 +845,41 @@ header{
   }
 }
 
+.apartments{
+  .item{
+    .left{
+      display: none;
+    }
+    ul{
+      padding: 0;
+      margin: 0;
+    }
 
+  }
+}
+.box-na-map{
+  width: auto;
+  a{
+    display: none;
+  }
+  .na-map{
+    display: inline-block;
+  }
+}
 
-
-
+.poisk {
+  .castum-h4 {
+    .bread-crumbs {
+        margin: -10px 0 -15px 1px;
+    }
+  }
+}
+.show-more {;
+    margin: 0 0 30px;
+}
+.butt-show-more {
+    margin: 17px 0 20px;
+}
 
 
 }////////////////\  615px   \//////////////////

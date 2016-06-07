@@ -596,7 +596,41 @@ header{
   }
 }
 
-
+.show-more{
+  overflow: hidden;
+  height: 430px;
+}
+.butt-show-more{
+  text-align: center;
+  position: relative;
+  margin: 17px 0 0;
+  &:before{
+    content: '';
+    position: absolute;
+    top: 13px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #dedede;
+  }
+  span{
+    background-color: #f9f9f9;
+    padding: 0 17px;
+    position: relative;
+    z-index: 3;
+  }
+  a{
+    font-size: rem(16);
+    color: #436db9;
+    text-transform: uppercase;
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-decoration: none;
+    border-bottom: 2px dotted #436db9;
+    &:hover{
+      border-bottom-color: transparent;
+    }
+  }
+}
 
 .objects-cont{
   padding: 10px 0;
@@ -728,6 +762,9 @@ header{
   left: 0;
   background-color: #1D6DBD;
   z-index: 98;
+  &.fixed{
+    top: 0!important;
+  }
 }
 
 .asid-menu{
@@ -1256,6 +1293,136 @@ header{
 
 
 }
+
+
+
+.poisk{
+  position: relative;
+  margin-top: -85px;
+  +.our-advantages{
+    padding-top: 0;
+  }
+  .castum-h4 {
+    .bread-crumbs {
+      margin: -57px 0 0;
+    }
+  }
+}
+
+
+.poisk-box{
+    padding: 0 0 30px;
+
+}
+
+.apartments{
+  max-width: 450px;
+  padding: 16px 0 0;
+  &.other{
+    .item{
+      width: 100%;
+      margin: 2px 0 40px;
+    }
+  }
+}
+
+
+.map-wrapper{
+    padding: 12px 0 0;
+}
+
+
+.box-na-map{
+  display: none;
+  vertical-align: middle;
+  width: 135px;
+  i{
+    vertical-align: middle;
+  }
+  a{
+    vertical-align: middle;
+    display: inline-block;
+    color: #50569e;
+    font-size: rem(18);
+    font-family: 'PT Sans Narrow', sans-serif;
+  }
+}
+.na-map{
+  display: inline-block;
+  margin: 0 5px 0 0;
+}
+
+
+
+.poist-menu{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 100%;
+  .nav-bg{
+    width: 280px;
+  }
+  &:before {
+    content: '';
+    background: url("../images/nav-asid3.png") 0 0 no-repeat;
+    width: 280px;
+    height: 751px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+  }
+  .asid-menu{
+    width: 280px;
+  }
+
+}
+
+
+
+
+
+
+.find-partment{
+  display: none;
+  position: absolute;
+  width: 380px;
+  z-index: 99;
+  left: -140px;
+  top: -5px;
+  text-align: right;
+  background-color: #1D6DBD;
+  height: 45px;
+  line-height: 42px;
+  padding: 0 30px;
+  z-index: 999;
+  &.fixed{
+    position: fixed;
+    top: 0;
+    left: -90px;
+
+  }
+  a{
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: rem(16);
+  }
+  &:before{
+    content: '';
+    display: inline-block;
+    width: 51px;
+    height: 45px;
+    background: url("../images/find-part-butt.png") 0 0 no-repeat;
+    position: absolute;
+    top: 0;
+    right: -44px;
+  }
+
+}
+
 
 
 

@@ -64,8 +64,13 @@ $(document).ready(function(){
 
       // \ionRangeSlider\
 
+    var $heigthElement = $('.objects-cont').height();
 
-
+    $('.butt-show-more').on('click', function(){
+      $(this).hide(500).prev('.show-more').animate({
+          'height': $heigthElement,
+      },700);
+    });
 
     $('.butt-nav').on('click', function(){
       $(this).next('ul').slideToggle(500);
@@ -90,6 +95,20 @@ $(document).ready(function(){
         .prev('.nav-bg-two').animate({'left':'-281px'},1000)
         .parents('.nav-asid-two').animate({'left':'-281px'},1000);
     });
+
+
+    $('.find-partment a').on('click',function(){
+      $(this).toggleClass('active');
+      if($(this).hasClass('active')){
+        $('.poist-menu').addClass('active').animate({'left':'0'},700).find('.nav-bg ,.asid-menu').animate({'left':'0'},700);
+      }else{
+        $('.poist-menu').removeClass('active').animate({'left':'-300px'},700).find('.nav-bg ,.asid-menu').animate({'left':'-300px'},700);
+      }
+
+
+    });
+
+
 
     // /*******************************
     //  *   ПЛАВНЫЙ ПЕРЕХОД ПО ЯКОРЯМ
@@ -127,20 +146,38 @@ $(document).ready(function(){
 
     // \formstyler\
 
+    // mCustomScrollbar
+    $('.apartments').mCustomScrollbar();
+    // \mCustomScrollbar\
 
 
-    // скрол меню на главной
-    var $object = $('.asid-menu');
-    var $clssOb = 'fixed';
-    var obHeight = $object.offset().top;
+});
 
-    $(this).scroll(function(e){
-      if($(this).scrollTop() > obHeight){
-        $object.addClass($clssOb);
-      }else {
-        $object.removeClass($clssOb);
-      }
-    });
-    // скрол меню на главной
 
+$(document).ready(function(){
+  // скрол меню на главной
+  var $object = $('.asid-menu');
+  var $obtwo =$('.find-partment');
+  var $clssOb = 'fixed';
+
+  var obHeight = $object.offset();
+  var obHeight = $object.offset();
+
+  $(this).on('scroll', function(){
+
+    if($(this).scrollTop() > obHeight.top){
+      $object.addClass($clssOb).prev('.nav-bg').addClass($clssOb);
+    }else {
+      $object.removeClass($clssOb).prev('.nav-bg').removeClass($clssOb);
+    };
+
+    if($(this).scrollTop() > obHeight.top){
+      $obtwo.addClass($clssOb);
+    }else {
+      $obtwo.removeClass($clssOb);
+    };
+
+  });
+
+  // скрол меню на главной
 });
