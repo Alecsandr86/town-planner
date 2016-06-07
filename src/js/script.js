@@ -4,6 +4,13 @@ window.log = function(param){
 };
 $(document).ready(function(){
 
+      // fancybox
+          $(".fancybox").fancybox();
+
+      // \fancybox\
+
+
+
       // ionRangeSlider
 
       $("#slid-1").ionRangeSlider({
@@ -58,6 +65,8 @@ $(document).ready(function(){
       // \ionRangeSlider\
 
 
+
+
     $('.butt-nav').on('click', function(){
       $(this).next('ul').slideToggle(500);
     });
@@ -73,6 +82,13 @@ $(document).ready(function(){
           scrollTop: $(target).offset().top},1000,'linear');
       return false;
 
+    });
+
+
+    $('.clok-menu').on('click', function(){
+      $(this).parents('.asid-menu').animate({'left':'-281px'},1000)
+        .prev('.nav-bg-two').animate({'left':'-281px'},1000)
+        .parents('.nav-asid-two').animate({'left':'-281px'},1000);
     });
 
     // /*******************************
@@ -100,8 +116,6 @@ $(document).ready(function(){
         controls: false,
     });
     // \bxSlider\
-
-
 
 
 

@@ -20,7 +20,10 @@
 @media screen and (max-width: 1530px) {
     .wrapper {
       max-width: 1250px;
-      padding: 0 0 0 220px;
+
+      &.pad-wr{
+        padding: 0 0 0 220px;
+      }
   }
   .aside-nav {
     width: 73%;
@@ -190,7 +193,9 @@
   }
   .wrapper{
     max-width: 960px;
-    padding: 0;
+    &.pad-wr{
+      padding: 0;
+    }
   }
   header{
     padding: 39px 0 23px;
@@ -262,6 +267,35 @@
   }
 
   /////////////// карта //////////////
+
+
+
+.scheme{
+  max-width: 205px;
+  img{
+    width: 100%;
+  }
+}
+.wrapper-map{
+  img{
+    width: 100%;
+  }
+}
+.hidden-lg-two{
+  display: none;
+}
+.other .item {
+    width: 50%;
+}
+.castum-h4 {
+  .bread-crumbs {
+      margin: -17px 5px 0;
+  }
+
+}
+
+
+
 
 
 
@@ -388,6 +422,41 @@ footer{
 
 /////////////// карта //////////////
 
+.nav-pages li{
+    padding: 0 15px 7px 0;
+}
+
+.scheme{
+  display: none;
+}
+
+.desc-conten {
+    width: 32.5%;
+}
+
+.price{
+  font-size: rem(30);
+}
+.planing{
+  display: block;
+}
+.desc-conten {
+    ul {
+      padding: 0 0 10px;
+    }
+}
+
+.other {
+  .item {
+      width: 60%;
+      margin: 0 auto 40px;
+      float: none;
+      overflow: hidden;
+      ul {
+        margin: -5px 0 0;
+      }
+    }
+}
 
 
 }////////////////\  959px   \//////////////////
@@ -595,6 +664,61 @@ header{
 }
 
 /////////////// карта //////////////
+
+
+
+
+
+.castum-h4 {
+  .bread-crumbs {
+      margin: -12px 0 0;
+      float: none;
+      li{
+        &:first-child{
+          padding: 0;
+        }
+      }
+  }
+}
+
+.street {
+  font-size: rem(26);
+  padding: 0 0 10px;
+}
+.video-objekt{
+  float: none;
+  .video {
+    margin: 0 8px -4px 0;
+  }
+}
+
+.nav-pages {
+    padding: 15px 0;
+    li{
+      padding: 0 50px 7px 0;
+    }
+}
+
+
+.gallery{
+  display: none;
+}
+.gallery-mabail{
+  display: block;
+}
+.desc-conten {
+    width: 64.5%;
+}
+
+
+.other {
+  .item {
+      width: 100%;
+  }
+}
+
+
+
 
 
 

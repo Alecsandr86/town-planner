@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/jquery.formstyler.css">
     <link rel="stylesheet" href="css/ion.rangeSlider.css">
     <link rel="stylesheet" href="css/ion.rangeSlider.skinHTML5.css">
+    <link rel="stylesheet" href="js/source/jquery.fancybox.css">
     <link rel="stylesheet" href="css/style.css">
 
 
@@ -26,6 +27,95 @@
 
 </head>
 <body>
+
+<div class="wrapper">
+    <!-- header -->
+    <header>
+      <div class="header-top both">
+        <a href="#" class="logo left" >
+          <img src="images/logo.png" alt="logo" />
+        </a>
+        <div class="aside-nav right">
+            <span class="head-tel"> <i class="phone"></i> +7 (4722) 787-787</span>
+            <span class="entrance">
+                <i class="lock"></i>
+                <a href="#">Вход</a>
+                    &frasl;
+                <a href="#">регистрация</a>
+            </span>
+
+            <nav class="header-nav">
+              <a class="butt-nav" href="#">
+                <i class="burger"></i>
+                  МЕНЮ
+              </a>
+              <ul>
+                <li class="active">
+                  <a href="#">О корпорации </a>
+                </li>
+                <li>
+                  <a href="#">Новости</a>
+                </li>
+                <li>
+                  <a href="#">Агентам</a>
+                </li>
+                <li>
+                  <a href="#">Застройщикам</a>
+                </li>
+                <li>
+                  <a href="#">Помощь</a>
+                </li>
+                <li>
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <nav class="phon-tel-mob">
+              <ul>
+                <li>
+                  <a class="outer" href="#">
+                    <i class="lock"></i>
+                  </a>
+                </li>
+                <li class="hidden-xs">
+                  <a class="outer" href="#">
+                    <i class="phone"></i>
+                  </a>
+                </li>
+              </ul>
+              <a class="butt-mob-nav" href="#">
+                <i class="burger-mob"></i>
+                  МЕНЮ
+              </a>
+            </nav>
+            <nav class="header-nav mobail-nav-header">
+              <ul>
+                <li class="active">
+                  <a href="#">О корпорации </a>
+                </li>
+                <li>
+                  <a href="#">Новости</a>
+                </li>
+                <li>
+                  <a href="#">Агентам</a>
+                </li>
+                <li>
+                  <a href="#">Застройщикам</a>
+                </li>
+                <li>
+                  <a href="#">Помощь</a>
+                </li>
+                <li>
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+        </div>
+      </div>
+
+    </header><!-- \header\ -->
+</div>
+
 
 <div class="wrapper">
   <!-- kvartira -->
@@ -82,6 +172,15 @@
               </div>
           </div><!-- \gallery\ -->
 
+          <!-- gallery-mabail -->
+          <div class="gallery-mabail left">
+            <a class="fancybox" rel="group"  href="images/gallery-img2.jpg"><img src="images/gallery-img2.jpg" /></a>
+            <a class="fancybox" rel="group"  href="images/gallery-img3.jpg"><img src="images/gallery-img3.jpg" /></a>
+            <a class="fancybox" rel="group"  href="images/gallery-img4.jpg"><img src="images/gallery-img4.jpg" /></a>
+          </div><!-- \gallery-mabail\ -->
+
+
+
           <div class="scheme left">
             <img src="images/scheme.jpg" alt="img">
           </div>
@@ -105,6 +204,10 @@
                   <span>Материал <b>кирпич</b></span>
                 </li>
               </ul>
+              <span class="planing">
+                <i class="map-link-b"></i>
+                <a href="#">Планировка</a>
+              </span>
               <a class="lik-stroy" href="#">Стройгрупп</a> <br>
               <span>Сдача 2 квартрал 2016  </span> <i class="crane-min"></i> <br>
               <span class="price">4 000 0000 руб.</span>
@@ -264,7 +367,7 @@
           <img src="images/company-icon-9.png" alt="img">
           <a href="#"></a>
         </div>
-        <div class="company-item hidden-lg ">
+        <div class="company-item hidden-lg-two">
           <i class="company-icon"></i>
           <img src="images/company-icon-10.png" alt="img">
           <a href="#"></a>
@@ -562,9 +665,11 @@
 
 
   <script src="js/jquery.min.js"></script>
+
   <script src="js/jquery.bxslider.min.js"></script>
   <script src="js/jquery.formstyler.min.js"></script>
   <script src="js/ion.rangeSlider.min.js"></script>
+  <script src="js/source/jquery.fancybox.js"></script>
   <script src="js/script.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCB7wB4D8Iszke6RkWbPHfpvmh7cuf72Oc"
     type="text/javascript"></script>

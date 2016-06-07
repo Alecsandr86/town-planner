@@ -781,7 +781,7 @@ header{
 
 
 .kvartira{
-  padding: 33px 0;
+  padding: 0 0 33px;
   .castum-h4 {
     margin-bottom: 5px;
   }
@@ -914,6 +914,10 @@ header{
   }
 }
 
+.gallery-mabail{
+  width: 100px;
+  display: none;
+}
 
 
 .scheme{
@@ -946,7 +950,19 @@ header{
     }
   }
 }
-
+.planing{
+  display: none;
+  vertical-align: middle;
+  padding: 0 0 10px;
+  i{
+    vertical-align: middle;
+    margin: 0 7px 0 0;
+  }
+  a{
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
 
 .price{
   font-family: 'PT Sans Narrow', sans-serif;
